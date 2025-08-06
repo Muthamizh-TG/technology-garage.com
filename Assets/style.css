@@ -121,7 +121,7 @@ html {
 #ctaBanner {
     position: sticky;
     top: 0;
-    z-index: 800;
+    z-index: 1020;
     /* Ensure it's above content, below nav */
     background-color: #000;
     color: white;
@@ -137,7 +137,7 @@ html {
 .popup-form-overlay {
   display: none;
   position: fixed;
-  z-index: 1020;
+  z-index: 999;
   left: 0; top: 0;
   width: 100%; height: 100%;
   background: rgba(0, 0, 0, 0.6);
@@ -383,6 +383,7 @@ html {
 
 .text-column {
     flex: 1.5;
+    text-align: center;
     min-width: 300px;
     padding-right: 30px;
 }
@@ -411,10 +412,11 @@ html {
 
 .image-column img {
     width: 100%;
-    max-width: 800px;
+    max-width: 700px;
     display: block;
     border-radius: 8px;
     height: 100%;
+    margin: 0 auto;
     object-fit: cover;
 }
 
@@ -532,7 +534,7 @@ html {
 
 
 /* Tablet (768px and below) */
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   .hero h1 {
     font-size: 3rem;
   }
@@ -546,7 +548,7 @@ html {
   }
 
   .image-column img {
-    max-width: 100%;
+    max-width: 90%;
   }
 
   .content-wrapper {
@@ -556,7 +558,7 @@ html {
 
   .image-column,
   .text-column {
-    width: 100%;
+    width: 90%;
     padding: 0;
   }
 
@@ -622,19 +624,6 @@ html {
 }
 
 @media (max-width: 1000px) {
-  .tg-features-section,
-  .tg-coach-section,
-  .features-section {
-    height: auto;         /* Let content define height */
-    min-height: auto;
-    padding: 60px 20px;   /* Add padding for spacing */
-  }
-  
-  .scroll{
-    display: none;
-  }
-}
-@media (min-width: 1000px) {
   .tg-features-section,
   .tg-coach-section,
   .features-section {
