@@ -121,7 +121,7 @@ html {
 #ctaBanner {
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 800;
     /* Ensure it's above content, below nav */
     background-color: #000;
     color: white;
