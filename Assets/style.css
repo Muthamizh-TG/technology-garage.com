@@ -39,7 +39,7 @@ html {
 
 .hero h1 {
     font-weight: 800;
-    font-size: 5rem;
+    font-size: 4.5rem;
     line-height: 1.3;
 }
 
@@ -121,7 +121,7 @@ html {
 #ctaBanner {
     position: sticky;
     top: 0;
-    z-index: 1020;
+    z-index: 999;
     /* Ensure it's above content, below nav */
     background-color: #000;
     color: white;
@@ -137,7 +137,7 @@ html {
 .popup-form-overlay {
   display: none;
   position: fixed;
-  z-index: 999;
+  z-index: 1020;
   left: 0; top: 0;
   width: 100%; height: 100%;
   background: rgba(0, 0, 0, 0.6);
@@ -225,7 +225,7 @@ html {
   border: none;
   padding: 12px;
   border-radius: 6px;
-  width: 20%;
+  width: 30%;
   font-weight: bold;
   cursor: pointer;
 }
@@ -376,14 +376,14 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1300px;
+    max-width: 80%;
     margin: 0 auto;
     height: 100%;
 }
 
 .text-column {
-    flex: 1.5;
-    text-align: center;
+    flex: 2;
+    text-align: left;
     min-width: 300px;
     padding-right: 30px;
 }
@@ -412,7 +412,7 @@ html {
 
 .image-column img {
     width: 100%;
-    max-width: 700px;
+    max-width: 600px;
     display: block;
     border-radius: 8px;
     height: 100%;
@@ -425,7 +425,7 @@ html {
     font-size: 1rem;
     text-align: left;
     color: #ccc;
-    max-width: 1300px;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -623,13 +623,17 @@ html {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1300px) {
   .tg-features-section,
   .tg-coach-section,
-  .features-section {
+  .features-section,
+  .hero {
     height: auto;         /* Let content define height */
     min-height: auto;
     padding: 60px 20px;   /* Add padding for spacing */
+  }
+  .scroll{
+    bottom: 5px;
   }
 }
 
