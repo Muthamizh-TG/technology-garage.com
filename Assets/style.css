@@ -488,7 +488,7 @@ html {
     border-right: 1px solid #ccc;
     border-radius: 0;
     height: 48px;
-    background-color: transparent;
+    background-color: #fff;
 }
 
 /* Input field */
@@ -497,7 +497,7 @@ html {
     min-width: 200px;
     border: none;
     height: 48px;
-    background-color: transparent;
+    background-color: #fff;
     border-radius: 0;
     width: auto !important;
     /* Let flex handle sizing */
@@ -574,7 +574,7 @@ footer .copyright {
 }
 
 /* Responsive Design */
-@media (max-width: 750px) {
+/* @media (max-width: 750px) {
     footer .row {
         flex-direction: column;
         text-align: center;
@@ -585,7 +585,7 @@ footer .copyright {
     }
 
     .footer-contact-group {
-        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        flex-wrap: wrap; 
         justify-content: center;
     }
 
@@ -608,7 +608,7 @@ footer .copyright {
     .footer-socials {
         justify-content: center !important;
     }
-}
+} */
 
 @media (max-width: 576px) {
   footer {
@@ -805,7 +805,7 @@ footer .copyright {
 }
 
 /* Ultra-narrow screens (Samsung Fold, 280px–350px) */
-@media (max-width: 350px) {
+@media (max-width: 400px) {
   .hero h1,
   .tg-coach-title,
   .text-column h2,
