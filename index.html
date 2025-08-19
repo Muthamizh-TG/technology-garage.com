@@ -87,7 +87,7 @@
 
       <label>Contact Number</label>
       <div class="phone-group">
-        <select class="option-select">
+        <select id="option-select">
           <option selected value="+91">IN +91</option>
           <option value="+1">US +1</option>
           <option value="+65">SG +65</option>
@@ -461,7 +461,7 @@
           console.log(`You are at: ${state}, ${country}`);
 
           // Auto-select country code
-          const countryCodeSelect = document.querySelector(".option-select");
+          const countryCodeSelect = document.querySelector(".option-select #option-select");
           if (countryCodeSelect) {
             if (country.toLowerCase().includes("india")) {
               countryCodeSelect.value = "+91";
