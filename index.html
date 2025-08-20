@@ -473,14 +473,14 @@
           }
 
           // Auto-select country code for footer
-          const countryCodeSelect = document.querySelector(".option-select2");
-          if (countryCodeSelect) {
+          const countryCodeSelect2 = document.querySelector(".option-select2");
+          if (countryCodeSelect2) {
             if (country.toLowerCase().includes("india")) {
-              countryCodeSelect.value = "+91";
+              countryCodeSelect2.value = "+91";
             } else if (country.toLowerCase().includes("united states")) {
-              countryCodeSelect.value = "+1";
+              countryCodeSelect2.value = "+1";
             } else if (country.toLowerCase().includes("singapore")) {
-              countryCodeSelect.value = "+65";
+              countryCodeSelect2.value = "+65";
             }
           }
 
